@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useQuestions } from "../../context/QuestionsProvider";
 import { useQuizStats } from "../../context/QuizStatsProvider";
 import { apiFetchQuestions } from "./QuizAPI";
+import QuizFooter from "./QuizFooter";
 import QuizQuestion from "./QuizQuestion";
 import QuizTimer from "./QuizTimer";
 
@@ -66,10 +67,12 @@ function Quiz() {
       {questions.length > 0 &&
         <>
           <QuizTimer onEmitTimer={handleEmitTimer} />
-          <p className="mb-2">Question {questionIdx + 1}</p>
+          <p className="mb-2 text-gray-500">Question {questionIdx + 1}</p>
           <QuizQuestion question={questions[questionIdx]} onAnswer={handleOnAnswer} />
         </>
       }
+      
+      <QuizFooter />
     </div>
   );
 }
