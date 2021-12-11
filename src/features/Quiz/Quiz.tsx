@@ -61,12 +61,12 @@ function Quiz() {
 
   return (
     <div className="container">
-      <h1 className="text-4xl font-bold">DevJam Quiz</h1>
+      <h1 className="text-4xl font-bold mb-5">DevJam Quiz</h1>
       {questions.length === 0 && <p>Loading questions...</p>}
       {questions.length > 0 &&
         <>
           <QuizTimer onEmitTimer={handleEmitTimer} />
-          <p>Question {questionIdx + 1}</p>
+          <p className="mb-2">Question {questionIdx + 1}</p>
           <QuizQuestion question={questions[questionIdx]} onAnswer={handleOnAnswer} />
         </>
       }

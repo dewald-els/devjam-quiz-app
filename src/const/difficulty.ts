@@ -1,0 +1,1 @@
+export const DIFFICULTY: string[] = ['easy', 'medium', 'hard'];
