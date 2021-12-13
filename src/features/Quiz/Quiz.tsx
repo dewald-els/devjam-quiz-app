@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom'
 import { useQuestions } from "../../context/QuestionsProvider";
 import { useQuizStats } from "../../context/QuizStatsProvider";
+import AppHeader from "../../shared/AppHeader";
 import { apiFetchQuestions } from "./QuizAPI";
 import QuizFooter from "./QuizFooter";
 import QuizQuestion from "./QuizQuestion";
@@ -61,19 +62,20 @@ function Quiz() {
   }
 
   return (
-    <div className="container">
-      <h1 className="text-4xl font-bold mb-5">DevJam Quiz</h1>
-      {questions.length === 0 && <p>Loading questions...</p>}
-      {questions.length > 0 &&
-        <>
-          <QuizTimer onEmitTimer={handleEmitTimer} />
-          <p className="mb-2 text-gray-500">Question {questionIdx + 1}</p>
-          <QuizQuestion question={questions[questionIdx]} onAnswer={handleOnAnswer} />
-        </>
-      }
-      
-      <QuizFooter />
-    </div>
+    <>
+      <AppHeader />
+      <div className="container">
+        {questions.length === 0 && <p>Loading questions...</p>}
+        {questions.length > 0 &&
+          <>
+            <QuizTimer onEmitTimer={handleEmitTimer} />
+            <QuizQuestion question={questions[questionIdx]} onAnswer={handleOnAnswer} />
+          </>
+        }
+
+        <QuizFooter />
+      </div>
+    </>
   );
 }
 export default Quiz;
