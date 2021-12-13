@@ -29,7 +29,7 @@ function MenuDifficulty() {
 
     return (
         <>
-            <span className="text-lg text-gray-500 mb-2 inline-block">Choose a difficulty</span>
+            <p className="text-lg text-gray-500 mb-2 inline-block text-center">Choose a difficulty</p>
             <div className="grid grid-cols-3 gap-2">
             {difficultyButtons}
             </div>

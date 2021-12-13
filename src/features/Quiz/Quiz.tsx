@@ -68,7 +68,10 @@ function Quiz() {
         {questions.length === 0 && <p>Loading questions...</p>}
         {questions.length > 0 &&
           <>
-            <QuizTimer onEmitTimer={handleEmitTimer} />
+            <section className="flex justify-between items-center mb-5">
+              <QuizTimer onEmitTimer={handleEmitTimer} />
+              <p className="font-bold bg-green rounded-lg p-3">{questionIdx + 1}/{questions.length}</p>
+            </section>
             <QuizQuestion question={questions[questionIdx]} onAnswer={handleOnAnswer} />
           </>
         }

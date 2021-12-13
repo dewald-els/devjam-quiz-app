@@ -22,7 +22,7 @@ function QuizTimer({ onEmitTimer }: PropTypes) {
     }, [ quizStats.gameOver ])
 
     return (
-        <section className="flex items-center mb-5">
+        <section className="flex items-center">
             <figure className="bg-blue rounded-full w-8 h-8">
                 <img src="img/hourglass.png" alt="Hourglass" width="32" />
             </figure>

@@ -1,6 +1,7 @@
 import AppHeader from "../../shared/AppHeader";
 import MenuButtons from "./MenuButtons";
 import MenuDifficulty from "./MenuDifficulty";
+import MenuQuestions from "./MenuQuestions";
 
 function Menu() {
 
@@ -13,9 +14,11 @@ function Menu() {
           <h2 className="text-5xl font-bold">DevJam Quiz!</h2>
           <h4 className="text-gray-500">Test your brain!</h4>
         </header>
-        <section className="mb-10">
+        <section className="mb-5">
           <MenuDifficulty />
         </section>
+
+        <MenuQuestions />
 
         <MenuButtons />
       </div>

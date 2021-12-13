@@ -56,7 +56,7 @@ function GameOver() {
                     <figure className="bg-blue rounded-full text-center mb-3">
                         <img src="img/brain.png" alt="Hourglass" width="64" />
                     </figure>
-                    <p className="text-xl font-bold">You got {correct}/10 correct!</p>
+                    <p className="text-xl font-bold">You got {correct}/{ questions.length } correct!</p>
                 </GameOverSection>
 
                 {correct >= 5 && <GameOverSection>
@@ -91,7 +91,7 @@ function GameOver() {
 
             <footer className="bg-yellow py-5">
                 <div className="container">
-                    <p>Created for DevJam by Dewald Els</p>
+                    <p>Created for <a className="underline" href="https://devjam.vercel.app/" target="_blank">DevJam</a> by <a className="underline" target="_blank" href="https://github.com/dewald-els/devjam-quiz-app">Dewald Els</a></p>
                 </div>
             </footer>
         </>

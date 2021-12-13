@@ -1,43 +1,39 @@
 # DevJam Quiz App
 
-App built with React using Vite.
+This project was developed as one of the DevJam challenges. 
 
-## Dependencies
-- [React Router](https://reactrouter.com/)
-- [React Timer Hook](https://www.npmjs.com/package/react-timer-hook)
+## Table of contents
+- [DevJam Quiz App](#devjam-quiz-app)
+  - [Table of contents](#table-of-contents)
+  - [Background](#background)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [License](#license)
 
----
 
-# Quiz App
+## Background
+DevJam is a Discord group for developers to improve their development skills. Projects range from 1 to 2 weeks. Learn more about [DevJam Quiz App](https://devjam.vercel.app/)
 
-**Tier:** 1-Beginner
+## Install
 
-Practice and test your knowledge by answering questions in a quiz application.
+Before running the project, some dependencies need to be install. Run the following command in the root directory of the project.
 
-As a developer you can create a quiz application for testing coding skills of other developers. (HTML, CSS, JavaScript, Python, PHP, etc...)
+```sh
+npm install
+```
 
-## User Stories
+## Usage
+This will start the project on http://localhost:3000 by default.
 
--   [ ] User can start the quiz by pressing a `button`
--   [ ] User can see a question with 4 possible answers
--   [ ] After selecting an answer, display the next question to the User. Do this until the quiz is finished
--   [ ] At the end, the User can see the following statistics
-    -   Time it took to finish the quiz
-    -   How many correct answers did he get
-    -   A message showing if he `passed` or `failed` the quiz
+```sh
+npm run dev
+```
 
-## Bonus features
+## Contributing
 
--   [ ] User can share the result of a quiz on social media
--   [ ] Add multiple quizzes to the application. User can select which one to take
--   [ ] User can create an account and have all the scores saved in his dashboard. User can complete a quiz multiple times
+PRs accepted.
 
-## Useful links and resources
+## License
 
--   [Open Trivia Database](https://opentdb.com/api_config.php)
-
-## Example projects
-
--   [Quiz app built with React](http://tranquil-beyond-43849.herokuapp.com/) (wait for it to load as it is hosted on Heroku)
--   [Quiz app interface](https://codepen.io/FlorinPop17/full/qqYNgW)
--   [Quiz Progressive Web App built with React](https://github.com/SafdarJamal/quiz-app)
+Unlicensed
